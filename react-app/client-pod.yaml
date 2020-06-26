@@ -1,0 +1,12 @@
+apiVerion: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: client
+      image: regokan/create-react-app
+      ports:
+        - containerPort: 3000
